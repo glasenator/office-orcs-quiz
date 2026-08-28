@@ -155,8 +155,11 @@ function App() {
           </div>
           <h1 className="result-title">{getResultText(score)}</h1>
           <p className="result-description">{resultDescription}</p>
-
+        </section>
+        <section className="card" style={{marginTop: '10px'}}>
           <div className="actions results-actions">
+            <p style={{textAlign: 'center', margin: '0px'}}>Screenshot your result<br></br> and tag us on instagram!</p>
+            <h4 style={{textAlign: 'center', margin: '0px'}}>#officeOrcs #glaserbeamgames</h4>
             <a
               className="btn btn-main btn-email results-email-link"
               href="https://www.danielmglaser.com/office-orcs#block-yui_3_17_2_1_1770227733631_7866"

@@ -3,9 +3,9 @@ const QUESTIONS = [
     prompt: "A teammate asks for help right before your lunch break. What do you do?",
     options: [
       { label: "Drop everything and help. Then eat the teammate.", points: 4 },
-      { label: "Hear their plea. Sharpen teeth. Help after lunch.", points: 3 },
+      { label: "Hear their plea. Sharpen teeth. Forget after lunch.", points: 3 },
       { label: "Send a short guide and let them try first.", points: 0 },
-      { label: "Hurl the sacred blade of Ra'z Kah them. Mercy is for cowards!", points: 1 }
+      { label: "Hurl the sacred blade of Ra'z Kah at them. Mercy is for cowards!", points: 1 }
     ]
   },
   {
@@ -29,7 +29,7 @@ const QUESTIONS = [
   {
     prompt: "Your manager asks where you see yourself in five years. You...",
     options: [
-      { label: "Unroll enormous battle map. “These lands shall be mine!”", points: 4 },
+      { label: "Unroll an enormous battle map. “These lands shall be mine!”", points: 4 },
       { label: "Stare into the distance. “Wherever the feast is.”", points: 3 },
       { label: "Point toward manager’s chair. “There. But bigger.”", points: 2 },
       { label: "Smile pleasantly. “Hopefully still generating value for our shareholders!”", points: 0 }
@@ -41,7 +41,7 @@ const QUESTIONS = [
       { label: "GRAK’THU! GRUK!!!!!!", points: 4 },
       { label: "KROG’MA! THRAK’UL GOR’RA.", points: 3 },
       { label: "Hunker down all weekend and get the job done. The company depends on you.", points: 0 },
-      { label: "GRUM’KAI!!!!! DROG’NAK VUL’GOR!!!", points: 1 }
+      { label: "GRUMKAI!!!!! DROG’NAK VULGOZR!!!", points: 1 }
     ]
   }
 ];
@@ -82,7 +82,7 @@ function getResultDescription(score) {
     );
   }
 
-  return addLineBreakAfterFirstSentence(getRandomItem(window.DESCRIPTIONS));
+  return `${getRandomItem(window.DESCRIPTIONS1)} ${getRandomItem(window.DESCRIPTIONS2)}` ;
 }
 
 window.QUIZ_DATA = {
